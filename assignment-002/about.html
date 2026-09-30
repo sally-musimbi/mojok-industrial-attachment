@@ -1,9 +1,285 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Us - Nexora Digital Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Nexora Digital Solutions.">
+    <title>Nexora Digital Solutions | About Us</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Nexora</a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="hero-content">
+                <p class="hero-subtitle">WHO WE ARE</p>
+                <h1>About Nexora Digital Solutions</h1>
+                <p>
+                    We create practical technology solutions that help
+                    businesses operate, connect and grow.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="hero-subtitle">ABOUT US</p>
+                    <h2>Technology With Purpose</h2>
+                </div>
+
+                <div class="about-content">
+                    <div>
+                        <h3>Our Story</h3>
+                        <p>
+                            Nexora Digital Solutions is a fictional Kenyan
+                            technology company focused on helping businesses
+                            use modern digital tools effectively.
+                        </p>
+
+                        <p>
+                            We combine creativity, technology and business
+                            understanding to develop solutions that are
+                            practical, reliable and easy to use.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            Our mission is to provide accessible and reliable
+                            digital solutions that help businesses improve
+                            productivity and serve their customers better.
+                        </p>
+
+                        <h3>Our Vision</h3>
+                        <p>
+                            To become a trusted technology partner for
+                            businesses seeking innovative digital solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section light-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="hero-subtitle">OUR VALUES</p>
+                    <h2>What We Stand For</h2>
+                </div>
+
+                <div class="highlights-grid">
+                    <article class="highlight-card">
+                        <h3>Innovation</h3>
+                        <p>
+                            We explore modern ideas and technologies to create
+                            useful digital solutions.
+                        </p>
+                    </article>
+
+                    <article class="highlight-card">
+                        <h3>Integrity</h3>
+                        <p>
+                            We value honesty, responsibility and transparency
+                            in our work.
+                        </p>
+                    </article>
+
+                    <article class="highlight-card">
+                        <h3>Quality</h3>
+                        <p>
+                            We focus on creating solutions that are reliable,
+                            usable and professionally presented.
+                        </p>
+                    </article>
+
+                    <article class="highlight-card">
+                        <h3>Customer Focus</h3>
+                        <p>
+                            We consider the needs of our clients when planning
+                            and developing solutions.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Let's Build Something Great</h2>
+                <p>
+                    Discover how technology can support your business goals.
+                </p>
+                <a href="contact.html" class="btn primary-btn">Contact Us</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Nexora Digital Solutions</h3>
+                <p>Smart technology. Better business.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@nexora.co.ke</p>
+                <p>Phone: +254 700 000 000</p>
+                <p>Kenya</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Nexora Digital Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
+/* About Us Page */
+.page-hero {
+    padding: 100px 20px;
+    background-color: #0F172A;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.page-hero h1 {
+    margin-bottom: 15px;
+}
+
+.content-section {
+    padding: 70px 20px;
+}
+
+.light-section {
+    background-color: #F8FAFC;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 35px;
+}
+
+.about-content h3 {
+    color: #2563EB;
+    margin-bottom: 12px;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.highlight-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-card h3 {
+    color: #2563EB;
+    margin-bottom: 12px;
+}
+
+.cta-section {
+    padding: 70px 20px;
+    background-color: #0F172A;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cta-section h2 {
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    margin-bottom: 25px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content li {
+    margin-bottom: 8px;
+}
+
+.footer-content a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #06B6D4;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
