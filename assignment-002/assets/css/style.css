@@ -360,4 +360,27 @@ h3 {
     .btn {
         text-align: center;
     }
+   /* Back to Top Button */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2563EB;
+    color: #FFFFFF;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-top.show {
+    display: block;
+}
+
+.back-to-top:hover {
+    background-color: #0F172A;
 }
