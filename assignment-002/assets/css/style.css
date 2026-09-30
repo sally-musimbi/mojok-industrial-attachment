@@ -427,3 +427,67 @@ h3 {
 .service-card li {
     margin-bottom: 8px;
 }
+/* Portfolio Page */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.portfolio-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.portfolio-image {
+    height: 180px;
+    background-color: #0F172A;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.portfolio-content {
+    padding: 25px;
+}
+
+.project-category {
+    color: #06B6D4;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.portfolio-content h3 {
+    color: #2563EB;
+    margin-bottom: 12px;
+}
+
+.portfolio-content p {
+    line-height: 1.7;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2563EB;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #0F172A;
+}
