@@ -1,8 +1,363 @@
-/* Nexora Digital Solutions
+/* =========================================
+   NEXORA DIGITAL SOLUTIONS
    Assignment 002 - Main Stylesheet
-*/
+   ========================================= */
+
+/* ---------- General Styles ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ---------- Navigation ---------- */
+
+.navbar {
+    min-height: 70px;
+    padding: 0 8%;
+    background-color: #0f172a;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #06b6d4;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    min-height: 620px;
+    padding: 100px 8%;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.92),
+            rgba(37, 99, 235, 0.85)
+        );
+}
+
+.hero-content {
+    max-width: 750px;
+    color: #ffffff;
+}
+
+.hero-subtitle,
+.section-subtitle {
+    color: #06b6d4;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(2.3rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 650px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #06b6d4;
+    color: #0f172a;
+}
+
+.primary-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+/* ---------- Section Heading ---------- */
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+/* ---------- Services ---------- */
+
+.services-preview {
+    background-color: #ffffff;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    padding: 30px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #2563eb;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* ---------- Highlights ---------- */
+
+.highlights {
+    background-color: #f1f5f9;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.highlight-item {
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-top: 4px solid #2563eb;
+}
+
+.highlight-item h3 {
+    margin-bottom: 12px;
+}
+
+/* ---------- Call To Action ---------- */
+
+.cta {
+    text-align: center;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+    background-color: #020617;
+    color: #cbd5e1;
+    padding: 60px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer a {
+    display: block;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #06b6d4;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    text-align: center;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+
+        background-color: #0f172a;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 25px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .services-grid,
+    .highlight-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 80px 6%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        text-align: center;
+    }
 }
