@@ -536,7 +536,7 @@ h3 {
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 100%!important;
     padding: 13px 15px;
     border: 1px solid #CBD5E1;
     border-radius: 8px;
