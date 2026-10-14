@@ -49,6 +49,7 @@ try {
             <a href="services.php">Manage Services</a> |
             <a href="projects.php">Manage Projects</a> |
             <a href="enquiries.php">View Enquiries</a> |
+            <a href="enquiries.php">Manage Enquiries</a>
             <a href="logout.php">Log Out</a>
         </nav>
     </header>
