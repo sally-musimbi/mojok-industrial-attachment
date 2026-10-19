@@ -61,16 +61,27 @@ The `testing-report.md` file contains the planned test cases. Update the test st
 
 ## Current Progress
 
-Completed documentation files:
+### Completed
+- Database schema for admin users, services, projects, and enquiries.
+- Entity Relationship Diagram (ERD).
+- SQL query documentation.
+- Example environment configuration.
+- PHP database connection using PDO.
+- Dynamic services and portfolio pages.
+- Contact form for storing visitor enquiries.
+- Administrator login and logout functionality.
+- Admin dashboard and CRUD pages for services and projects.
+- Enquiry listing and status management.
+- Testing report with planned test cases.
 
-- `database/schema.sql`
-- `database/ERD.md`
-- `database/sql-queries.md`
-- `.env.example`
-- `testing-report.md`
-
-The PHP implementation, admin dashboard, and final testing remain to be completed.
+### Remaining
+- Review the project folder structure and file paths.
+- Complete security checks and fix any issues found.
+- Configure and run the project in a PHP/MySQL environment.
+- Execute the test cases and record the actual results.
+- Capture screenshots of the working website and dashboard.
+- Complete the learning report.
 
 ## Learning Outcomes
 
-This project provides practical experience in PHP development, relational database design, secure authentication, CRUD operations, testing, and version control.
+This project provides practical experience in PHP development, relational database design, secure authentification CRUD operations, testing, and version control.
