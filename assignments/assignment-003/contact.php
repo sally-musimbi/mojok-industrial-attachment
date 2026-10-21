@@ -54,9 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = 'Please enter a subject (maximum 200 characters).';
     }
 
-    if ($message === '') {
-        $errors[] = 'Please enter your message.';
-    }
+    
+if ($message === '' || strlen($message) > 5000) {
+    $errors[] = 'Please enter a message (maximum 5000 characters).';
+}
+
 
     if (empty($errors)) {
         require_once __DIR__ . '/config/database.php';
