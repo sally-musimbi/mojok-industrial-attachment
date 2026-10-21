@@ -3,11 +3,22 @@
 
 declare(strict_types=1);
 
+// Strengthen session cookie security before starting the session.
 if (session_status() !== PHP_SESSION_ACTIVE) {
+    ini_set('session.use_strict_mode', '1');
+    ini_set('session.cookie_httponly', '1');
+    ini_set('session.cookie_samesite', 'Lax');
+
+    // Enable this when the site is running over HTTPS.
+    if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
+        ini_set('session.cookie_secure', '1');
+    }
+
     session_start();
 }
 
 require_once __DIR__ . '/../config/database.php';
+
 
 $error = '';
 
