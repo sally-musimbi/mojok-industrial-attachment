@@ -45,15 +45,21 @@ Database documentation is stored in the `database/` directory.
 - Use CSRF tokens to protect form submissions.
 - Keep real environment credentials out of GitHub.
 
+
 ## Setup
 
-1. Install PHP, MySQL, and a local web server such as XAMPP.
-2. Create the `nexora_db` database using `database/schema.sql`.
-3. Configure local database credentials using the environment configuration approach selected for the project.
-4. Create a local administrator account with a securely generated password hash.
-5. Start the local server and test the website.
+1. Install PHP with the PDO MySQL extension, MySQL, and a local web server such as XAMPP.
+2. Create the `nexora_db` database by importing `database/schema.sql` into MySQL.
+3. Configure the database connection variables shown in `.env.example` in your local server environment. The example file documents the required values; PHP does not automatically load it.
+4. Ensure `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, and `DB_PASSWORD` are available to PHP.
+5. Start the local web server and open the project through its local server URL.
+6. Create the initial administrator only in a trusted local development environment.
 
-Never commit a real `.env` file or actual database passwords.
+### Administrator Setup Security
+
+`create-admin.php` is a temporary initial-account setup page. Do not expose it on a public server. After creating the first administrator, remove or disable the file before deployment. A CSRF token alone does not make public access to this page safe.
+
+Never commit a real `.env` file, database passwords, or other secrets to GitHub.
 
 ## Testing
 
@@ -82,6 +88,8 @@ The `testing-report.md` file contains the planned test cases. Update the test st
 - Capture screenshots of the working website and dashboard.
 - Complete the learning report.
 
+
 ## Learning Outcomes
 
-This project provides practical experience in PHP development, relational database design, secure authentification CRUD operations, testing, and version control.
+This project provides practical experience in PHP development, relational database design, secure authentication, CRUD operations, server-side validation, CSRF protection, testing, and version control with Git and GitHub.
+
