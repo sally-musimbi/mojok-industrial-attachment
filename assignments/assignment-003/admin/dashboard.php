@@ -50,7 +50,24 @@ try {
             <a href="projects.php">Manage Projects</a> |
             <a href="enquiries.php">View Enquiries</a> |
             <a href="enquiries.php">Manage Enquiries</a>
-            <a href="logout.php">Log Out</a>
+            <?php
+if (empty($_SESSION['logout_csrf_token'])) {
+    $_SESSION['logout_csrf_token'] = bin2hex(random_bytes(32));
+}
+?>
+
+<form method="post" action="logout.php">
+    <input
+        type="hidden"
+        name="csrf_token"
+        value="<?= htmlspecialchars(
+            $_SESSION['logout_csrf_token'],
+            ENT_QUOTES,
+            'UTF-8'
+        ) ?>"
+    >
+    <button type="submit">Logout</button>
+</form>
         </nav>
     </header>
 
