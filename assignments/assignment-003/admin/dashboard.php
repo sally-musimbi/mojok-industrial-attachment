@@ -45,12 +45,13 @@ try {
             ) ?>!
         </p>
         <nav>
-            <a href="dashboard.php">Dashboard</a> |
-            <a href="services.php">Manage Services</a> |
-            <a href="projects.php">Manage Projects</a> |
-            <a href="enquiries.php">View Enquiries</a> |
-            <a href="enquiries.php">Manage Enquiries</a>
-            <?php
+    <a href="dashboard.php">Dashboard</a> |
+    <a href="services.php">Manage Services</a> |
+    <a href="projects.php">Manage Projects</a> |
+    <a href="enquiries.php">Manage Enquiries</a>
+</nav>
+
+<?php
 if (empty($_SESSION['logout_csrf_token'])) {
     $_SESSION['logout_csrf_token'] = bin2hex(random_bytes(32));
 }
